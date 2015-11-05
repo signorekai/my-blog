@@ -1,0 +1,22 @@
+{
+  "name": "-signore-kai-said-so",
+  "description": "Home of Signore Kai, also known as Alfred Lau in the real world",
+  "dependencies": {
+    "autoprefixer-stylus": "0.8.x",
+    "axis": "0.5.x",
+    "coffee-script": "^1.0.0",
+    "css-pipeline": "0.3.x",
+    "download": "^4.4.1",
+    "download-status": "^2.2.1",
+    "downloader": "^0.1.2",
+    "dynamic-content": "^0.3.0",
+    "jade": "^1.0.0",
+    "kramed": "^0.5.3",
+    "moment": "^2.10.6",
+    "node-sass": "3.4.1",
+    "roots-browserify": "^0.5.0",
+    "roots-contentful": "0.0.8",
+    "rupture": "0.6.x",
+    "wordcount": "^1.1.1"
+  }
+}

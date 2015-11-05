@@ -1,0 +1,20 @@
+extends layout
+
+block content
+  - for post in contentful.posts
+    article
+      section.post-meta
+        .avatar
+        .post-author
+          strong #{post.author[0].fields.name}
+          br
+          != moment(post.date).format('ll')
+          br
+          != count_words(post.body)
+      header.post-header
+        h2.post-title
+          a(href="#{post._url}") #{post.title}
+      section.post-excerpt
+        != marked( post.body.substr(0, post.body.indexOf("\n")))
+        p
+          a(href="#{post._url}") Continue reading →

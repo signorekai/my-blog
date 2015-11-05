@@ -1,0 +1,22 @@
+
+extends layout
+
+block content
+  .post
+    .container.left
+      article(class='')
+        section.post-meta.small
+          .post-author
+
+        header#post-title.post-header
+          h2.post-title #{entry.title}
+        section.post-content
+          != marked(entry.body)
+  if entry.featuredImage
+    != downloader(entry.featuredImage.fields.file.url, entry.slug + '-featured-image.jpg')
+
+    style.
+      div.header::after, .header .text h1.sticky::after {
+        background-image: url(#{'/img/'+ entry.slug + '-featured-image.jpg'});
+        opacity: 0.5;
+      }
